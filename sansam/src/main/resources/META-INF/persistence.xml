@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+
+    <persistence-unit name="my-persistence-unit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.sansam.data.entity.User</class>
+        <class>com.sansam.data.entity.Course</class>
+        <class>com.sansam.data.entity.Review</class>
+
+        <properties>
+            <property name="javax.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver" />
+<!--            properties below are mapped programmatically in order to externally import secret variables.-->
+<!--            <property name="javax.persistence.jdbc.url" value="url" />-->
+<!--            <property name="javax.persistence.jdbc.user" value="username" />-->
+<!--            <property name="javax.persistence.jdbc.password" value="password" />-->
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MariaDBDialect" />
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+            <property name="hibernate.format_sql" value="true" />
+            <property name="hibernate.jdbc.time_zone" value="UTC" />
+            <property name="hibernate.physical_naming_strategy" value="org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl" />
+
+            <property name="hibernate.show_sql" value="true" />
+        </properties>
+    </persistence-unit>
+
+</persistence>

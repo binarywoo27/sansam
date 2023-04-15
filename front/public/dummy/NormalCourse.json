@@ -1,0 +1,123 @@
+[
+  {
+    "courseList": [
+      {
+        "courseNo": 1,
+        "courseMtNm": "남산",
+        "courseMtCd": 111400101,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 40,
+        "courseDowntime": 30,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 중구 예장동"
+      },
+      {
+        "courseNo": 2,
+        "courseMtNm": "남산",
+        "courseMtCd": 111400101,
+        "courseMtNo": 5,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 40,
+        "courseDowntime": 30,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 중구 예장동"
+      },
+      {
+        "courseNo": 3,
+        "courseMtNm": "인왕산",
+        "courseMtCd": 114100401,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 서대문구 홍제동"
+      },
+      {
+        "courseNo": 4,
+        "courseMtNm": "청계산",
+        "courseMtCd": 116500601,
+        "courseMtNo": 4,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 서초구 원지동"
+      },
+      {
+        "courseNo": 5,
+        "courseMtNm": "도봉산",
+        "courseMtCd": 113200102,
+        "courseMtNo": 1,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 도봉구 도봉동"
+      },
+      {
+        "courseNo": 6,
+        "courseMtNm": "아차산",
+        "courseMtCd": 112150201,
+        "courseMtNo": 4,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 광진구 중곡동"
+      },
+      {
+        "courseNo": 7,
+        "courseMtNm": "관악산",
+        "courseMtCd": 116200201,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "서울특별시 관악구 신림동"
+      },
+      {
+        "courseNo": 8,
+        "courseMtNm": "계룡산",
+        "courseMtCd": 441500301,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "충청남도 공주시 계룡면 양화리"
+      },
+      {
+        "courseNo": 9,
+        "courseMtNm": "칠갑산",
+        "courseMtCd": 447902001,
+        "courseMtNo": 1,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "중간",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "충청남도 청양군 대치면 광대리"
+      }
+    ]
+  }
+]

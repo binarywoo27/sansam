@@ -1,0 +1,1 @@
+[산림청 등산로 데이터셋 링크](https://forest.go.kr/kfsweb/opda/dataMng/pblicDataPrusContView.do?pblicDataId=PBD0000041&searchSrvc=&tabs=3&mn=NKFS_06_08_02&subTitle=%EB%93%B1%EC%82%B0%EB%A1%9C%EC%A0%95%EB%B3%B4)

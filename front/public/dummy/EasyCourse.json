@@ -1,0 +1,97 @@
+[
+  {
+    "courseList": [
+      {
+        "courseNo": 1,
+        "courseMtNm": "앞산",
+        "courseMtCd": 272000301,
+        "courseMtNo": 1,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "대구광역시 남구 대명동"
+      },
+      {
+        "courseNo": 2,
+        "courseMtNm": "앞산",
+        "courseMtCd": 272000301,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "대구광역시 남구 대명동"
+      },
+      {
+        "courseNo": 3,
+        "courseMtNm": "비슬산",
+        "courseMtCd": 277101501,
+        "courseMtNo": 1,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "대구광역시 달성군 유가읍 양리"
+      },
+      {
+        "courseNo": 4,
+        "courseMtNm": "비슬산",
+        "courseMtCd": 277101501,
+        "courseMtNo": 2,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "대구광역시 달성군 유가읍 양리"
+      },
+      {
+        "courseNo": 5,
+        "courseMtNm": "비슬산",
+        "courseMtCd": 277101501,
+        "courseMtNo": 4,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "대구광역시 달성군 유가읍 양리"
+      },
+      {
+        "courseNo": 6,
+        "courseMtNm": "가야산",
+        "courseMtCd": 478400101,
+        "courseMtNo": 1,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "경상북도 성주군 수륜면 백운리"
+      },
+      {
+        "courseNo": 7,
+        "courseMtNm": "가야산",
+        "courseMtCd": 478400101,
+        "courseMtNo": 4,
+        "courseXCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseYCoords": [0.1234, 0.2222, 0.3333, 0.5555],
+        "courseAbsDiff": "쉬움",
+        "courseUptime": 30,
+        "courseDowntime": 20,
+        "courseLength": 2.123,
+        "courseLocation": "경상북도 성주군 수륜면 백운리"
+      }
+    ]
+  }
+]

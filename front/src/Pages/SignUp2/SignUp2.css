@@ -1,0 +1,56 @@
+/* SignUp2 페이지 전체 */
+.SignUp2 {
+  text-align: center;
+  align-items: center;
+  font-family: "GmarketSansLight";
+}
+
+/* SignUp2 페이지 제목 */
+.SignUp2Title {
+  font-size: 8vw;
+  margin-top: 15vh;
+  line-height: 50%;
+}
+
+
+
+
+/* 이하는 styled component 처리 하였음 */
+
+/* SignUp2 페이지 SearchBar */
+/* .SearchBarDiv {
+  width: 100vw;
+  position: relative;
+  height: 7vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* .SearchBar {
+  position: absolute;
+  width: 70vw;
+  height: 10vw;
+  border-radius: 5%;
+  font-family: "GmarketSansMedium";
+  font-size: 4vw;
+} */
+
+/* .SearchBarBtn {
+  position: absolute;
+  right: 14.25vw;
+  width: 20%;
+  height: 10.5vw;
+  font-size: 5vw;
+  border-radius: 5%;
+  background-color: #238C47;
+  color : white;
+  font-family: "GmarketSansMedium";
+} */
+
+/* SignUp2 페이지 등산경험 목록 */
+/* .ExperienceList {
+
+} */

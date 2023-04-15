@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+    tools {nodejs "nodejs"}
+    stages {
+        stage('Gitlab') {
+            steps {
+                script {
+                    git branch: 'dev/fe',
+                    credentialsId: 'GitLab',
+                    url: '${gitlab repository url}'
+                }
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('front') {
+                    script {
+                        sh "npm install"
+                        sh "npm run build"
+                    }
+                }
+                dir('') {
+                    script {
+                        dockerImage = docker.build("${docker hub url}:latest")
+                    }
+                }
+            }
+        }
+        stage('Docker hub push') {
+            steps {
+                script {
+                    docker.withRegistry('', 'Docker-Hub') {
+                        dockerImage.push("$BUILD_NUMBER")
+                    }
+                    sh "docker rmi ${docker hub url}:$BUILD_NUMBER"
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'docker stop d205-frontend || true'
+                sh 'docker rm -f d205-frontend || true'
+                sh 'docker run -dp 3000:80 --net=bridge --name d205-frontend ${docker hub url}:latest'
+                sh 'docker image prune -f'
+            }
+        }
+    }
+}

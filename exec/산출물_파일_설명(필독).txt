@@ -1,0 +1,10 @@
+# API key 및 DB 접속 정보는 하기 파일 참조
+/sansam/src/main/resources/application-SECRET.yml
+
+# 시연 시나리오는 README.md 참조
+
+# DB 덤프 파일은 코스 제작 과정에서 생성된 좌표 데이터의 크기가 큰 관계로 csv 파일로 추출해서 업로드 완료
+/exec/db_dummy_data.zip
+
+# 프로젝트 빌드 방식에 필요한 Dockerfile과 Jenkinsfile은 하기 파일 참조
+/exec/build_data.zip

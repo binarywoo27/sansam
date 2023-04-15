@@ -1,0 +1,46 @@
+spring:
+  profiles:
+    include:
+      - SECRET
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: ${mariadb-url}
+    username: ${mariadb-username}
+    password: ${mariadb-password}
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+  security:
+    oauth2:
+      client:
+        #OAuth 로그인 시 설정한 Application의 정보를 사용하여 AccessToken을 Authorization Server에게 발급받을 때 사용
+        registration:
+          kakao:
+            client-id: ${kakao-client-id}
+            client-secret: ${kakao-client-secret}
+            redirect-uri: ${kakao-redirect-uri}
+            client-authentication-method: POST
+            authorization-grant-type: authorization_code
+            scope: account_email
+            client-name: kakao
+        #AccessToken을 Authorization Server에게 발급 받은 후, 해당 AccessToken으로 Resource Server의 API를 사용할 때  provider 부분의 정보를 사용하여 API 호출
+        provider:
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
+
+server:
+  port: 5000

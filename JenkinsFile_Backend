@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+    stages {
+        stage('Gitlab') {
+            steps {
+                git branch: 'dev/be',
+                credentialsId: 'GitLab',
+                url: '${gitlab repository url}'
+            }
+        }
+        stage('Build') {
+            steps {
+                dir('sansam') {
+                    sh "chmod +x gradlew"
+                    sh "./gradlew bootJar"
+                    sh "mv ./build/libs/*.jar ../Dockerfiles/sansam/"
+                }
+                dir('Dockerfiles/sansam') {
+                    script {
+                        dockerImage = docker.build "${docker hub url:latest}"
+                    }
+                }
+            }
+        }
+        stage('Docker hub push') {
+            steps {
+                script {
+                    docker.withRegistry('', 'Docker-Hub') {
+                        dockerImage.push("$BUILD_NUMBER")
+                        dockerImage.push("latest")
+                    }
+                    sh "docker rmi ${docker hub url}:$BUILD_NUMBER"
+                }
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'docker stop d205-springboot || true'
+                sh 'docker rm -f d205-springboot || true'
+                sh 'docker run -dp 5000:5000 -e SPRING_DATASOURCE_URL=jdbc:mariadb://172.17.0.1:3306/sansam_db?serverTimezone=Asia/Seoul --net=bridge --name d205-springboot ${docker hub url}:latest'
+                sh 'docker image prune -f'
+            }
+        }
+    }
+}
