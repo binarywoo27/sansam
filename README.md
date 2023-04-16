@@ -1,5 +1,5 @@
 # ✔️ Project: 산삶
-![산삶로고](./uploads/imgs/sansam_logo.png)
+<img src="./uploads/imgs/sansam_logo.png" width="35%"/>
 
 ## 🎤 산삶 소개
 "오늘은 어떤 등산 코스로 가볼까?"  
@@ -38,9 +38,9 @@ __[산삶 체험하기 링크](https://j8d205.p.ssafy.io/)__
 #### 로그인
 ![로그인](./uploads/imgs/login.png)
 
-### 초기 로그인 시 사용자 정보 등록
-![회원가입1](./uploads/img/signUp1.png) </br></br>
-![회원가입2](./uploads/img/signUp2.png)
+### 사용자 정보 등록
+<img src="./uploads/imgs/signUp1.png" width="35%"/> </br></br>
+<img src="./uploads/imgs/signUp2.png" width="35%"/>
 
 #### 메인페이지
 ###### 초기화면
