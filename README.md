@@ -38,6 +38,10 @@ __[산삶 체험하기 링크](https://j8d205.p.ssafy.io/)__
 #### 로그인
 ![로그인](./uploads/imgs/login.png)
 
+### 초기 로그인 시 사용자 정보 등록
+![회원가입1](./uploads/img/signUp1.png) </br></br>
+![회원가입2](./uploads/img/signUp2.png)
+
 #### 메인페이지
 ###### 초기화면
 ![메인화면](./uploads/imgs/main.png)  
